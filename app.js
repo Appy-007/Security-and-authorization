@@ -17,7 +17,7 @@ app.use(bodyparser.urlencoded({extended:true}));
 
 
 app.use(session({
-    secret:"Secret of appjs file",
+    secret:"process.env.SECRET",
     resave:false,
     saveUninitialized:true
 }))
